@@ -1,65 +1,40 @@
 # MS_AOC
 
-Solutions for the Mainframe Society's Advent of Code.
+Solutions for the Mainframe Society’s Advent of Code, using a mix of mainframe-oriented and modern tooling.
 
-This repo collects my solutions and experiments around Advent of Code with a focus on **mainframe-related tooling** and a mix of **classic** and **modern** approaches.
+## Repository layout
+- `2025/` — Advent of Code 2025 solutions, grouped by language (COBOL, Python, REXX).
 
----
-
-## Goals
-
-This is **not** a “perfect solutions only” repository.
-
-The idea is to:
-
-- show how Advent of Code style problems can be solved on the **mainframe**,
-- use a mix of tools over the course of the event (REXX, JCL, COBOL, Python, ...),
-- switch technologies **between days**, not collect every possible variant for each single puzzle,
-- keep the code readable enough to be used as **learning material**.
-
-So the focus won’t always be on the single most optimal solution,
-but on **illustrating different approaches and trade-offs** across the calendar.
-
----
-
-## Repo structure
-
-The layout may evolve over time, but roughly:
-
-- `2025/` (or similar year folders)  
-  Year-specific solutions.
-- Inside each year:
-  - `day01/`, `day02/`, … – solution for that day, usually in one chosen language
-
-Check the folder for the day you are interested in;  
-run instructions are usually in comments at the top of the source files.
-
----
+### Day coverage (2025)
+| Day | Part(s) | Language | Path |
+| --- | ------- | -------- | ---- |
+| 01  | 1 & 2   | Python   | `2025/Python/AOC25D01_01.py`, `2025/Python/AOC25D01_02.py` |
+| 01  | 1 & 2   | REXX     | `2025/REXX/AOC25D01_01.rexx`, `2025/REXX/AOC25D01_02.rexx` |
+| 02  | 1 & 2   | Python   | `2025/Python/AOC25D02_01.py`, `2025/Python/AOC25D02_02.py` |
+| 03  | 1 & 2   | REXX     | `2025/REXX/AOC25D03_01.rexx`, `2025/REXX/AOC25D03_02.rexx` |
+| 04  | 1       | COBOL    | `2025/Cobol/AOC25D04.cbl` |
+| 05  | 1 & 2   | REXX     | `2025/REXX/AOC25D05_01.rexx`, `2025/REXX/AOC25D05_02.rexx` |
+| 06  | 1 & 2   | Python   | `2025/Python/AOC25D06_01.py`, `2025/Python/AOC25D06_02.py` |
+| 07  | 1       | Python   | `2025/Python/AOC25D07_01.py` |
+| 07  | 2       | REXX     | `2025/REXX/AOC25D07_02.rexx` |
+| 08  | 1 & 2   | Python   | `2025/Python/AOC25D08_01.py`, `2025/Python/AOC25D08_02.py` |
+| 09  | 1       | COBOL    | `2025/Cobol/AOC25D09_01.cbl` |
+| 09  | 2       | Python   | `2025/Python/AOC25D09_02.py` |
+| 10  | 1       | REXX     | `2025/REXX/AOC25D10_01.rexx` |
+| 10  | 2       | Python   | `2025/Python/AOC25D10_02.py` |
+| 11  | 1       | REXX     | `2025/REXX/AOC25D11_01.rexx` |
+| 11  | 2       | Python   | `2025/Python/AOC25D11_02.py` |
+| 12  | 1       | Python   | `2025/Python/AOC25D12_01.py` |
 
 ## Technologies
 
-You can expect a mix of:
-
-- **REXX** and **JCL** on z/OS
-- occasionally **COBOL** for “classic” style solutions
-- **Python** or other “modern” helpers where it makes sense
-
-Not every day will use every language – the idea is to **rotate** through them as it fits the problem and my mood.
-
----
+Rotating mix of REXX, COBOL, and Python to illustrate different approaches across the calendar.
 
 ## Inputs
 
-Advent of Code inputs are typically **not committed**,  
-because they are tied to individual accounts.
-
-To run a solution, place your own input file as described in the comments of that day’s code.
-
----
+Advent of Code inputs are not committed; supply your own input file as directed in each source file’s comments.
 
 ## Disclaimer
 
 This is an unofficial personal project.
-
-It is not affiliated with Advent of Code or with Mainframe Society.
 Use at your own risk, enjoy, and feel free to get inspired or adapt parts of the code.
